@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+<script src="https://kit.fontawesome.com/11eb14a462.js" crossorigin="anonymous"></script>
+    <title>API ~ Cocktail Finder | &#127864;</title>
+    <link rel="shortcut icon" href="cocktail.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cocktail Finder</h1>
+      <div class="flex">
+        <form class="flex" id="submit">
+          <input type="text" id="search" placeholder="Search.." autocomplete="off">
+          <button class="search-btn" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <button class="random-btn" id="random">
+          <i class="fas fa-random"></i>
+        </button>
+      </div>
+      <div id="result-text"></div>
+      <div class="cocktails" id="cocktails"></div>
+      <div class="single-cocktail"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
