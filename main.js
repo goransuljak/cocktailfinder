@@ -71,7 +71,6 @@ function addDrinkToDOM(drink) {
     <img src="${drink.strDrinkThumb}" />
     <div class="main">
     <p>${drink.strInstructions}</p>
-    <h3>Ingredients</h3>
     <ul>
     ${ing.map(ing => `<li>${ing}</li>`).join('')}
     </ul>

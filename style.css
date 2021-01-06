@@ -96,3 +96,27 @@ input[type="text"] {
     grid-gap: 5px;
   }
 }
+.main ul {
+  list-style: none;
+  text-align: center;
+}
+.main {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.single-cocktail img {
+  width: 500px;
+}
+@media (max-width: 600px) {
+  .single-cocktail img {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .single-cocktail img {
+    width: 300px;
+  }
+  .main {
+    width: 300px;
+  }
+}
