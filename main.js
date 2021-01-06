@@ -25,8 +25,10 @@ if(term.trim()) {
     .then(data => {
         console.log(data);
         resultText.innerHTML = `<p>Results for <i>"${term}</i>"</p>`;
-        if(data.drinks === null) {
-            resultText.innerHTML = ``;
+        if(data.drinks === null) { 
+            cocktailsEl.innerHTML = '';
+
+            resultText.innerHTML = '';
         } else {
             cocktailsEl.innerHTML = data.drinks.map(drink => `
             <div class="cocktails">
