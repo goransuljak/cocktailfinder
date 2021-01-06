@@ -27,7 +27,7 @@ if(term.trim()) {
         resultText.innerHTML = `<p>Results for <i>"${term}</i>"</p>`;
     })
 } else {
-    alert('Enter search value');
+    resultText.innerHTML = `<p><i>enter valid search term</i></p>`;
 }
 }
 
