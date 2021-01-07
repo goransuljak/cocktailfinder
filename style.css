@@ -4,14 +4,13 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  /* background: rgb(34, 193, 195);
+  background: rgb(34, 193, 195);
   background: linear-gradient(
     82deg,
     rgba(34, 193, 195, 1) 0%,
     rgba(233, 45, 253, 1) 100%
-  ); */
-  background-color: #fff;
-  color: #000;
+  );
+  color: #fff;
 }
 .container {
   margin: auto;
