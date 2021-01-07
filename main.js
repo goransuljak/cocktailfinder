@@ -81,9 +81,22 @@ function addDrinkToDOM(drink) {
     `;
 }
 
+// get ~ fetch ~ random drink
+function randomCocktail() {
+ resultText.innerHTML = "";
+ cocktailsEl.innerHTML = "";
+ fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+ .then(res => res.json())
+ .then(data => {
+     const drink = data.drinks[0];
+     addDrinkToDOM(drink);
+ })
+}
+
 // EVENT LISTENERS
 
 submit.addEventListener('submit', searchCocktail);
+random.addEventListener('click', randomCocktail);
 
 cocktailsEl.addEventListener('click', e => {
     const drinkInfo = e.path.find(item => {
@@ -98,3 +111,4 @@ cocktailsEl.addEventListener('click', e => {
         getDrinkByID(drinkId);
     }
 });
+
